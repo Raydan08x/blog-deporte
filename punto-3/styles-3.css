@@ -1,0 +1,37 @@
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #059669;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    min-height: 100px;
+}
+
+ul.navbar li.logo {
+    position: absolute;
+    left: 20px;
+}
+
+ul.navbar li.logo img {
+    height: 80px;
+    width: auto;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "bebas neue", sans-serif;
+}
+
+ul.navbar li a:hover {
+    background-color: #34D399;
+    transition: background-color 0.5s ease;
+}
