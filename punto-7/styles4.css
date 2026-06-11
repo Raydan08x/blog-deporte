@@ -82,3 +82,21 @@ footer {
   padding: 3px 10px;
   border-radius: 999px;
 }
+
+/* Contenido centrado */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Footer menos alto y más compacto */
+footer {
+  margin-top: 1rem;
+  padding: 1.2rem 2rem;
+}
+
+.footer-grid {
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
