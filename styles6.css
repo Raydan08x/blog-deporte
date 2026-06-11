@@ -1,3 +1,10 @@
+:root{
+    --verde-principal: #059669;
+    --verde-secundario: #34D399;
+    --negro: #111827;
+    --verde-claro: #D1FAE5;
+}
+
 ul.navbar {
     list-style-type: none;
     margin: 0;
@@ -39,13 +46,6 @@ ul.navbar li a {
 ul.navbar li a:hover {
     background-color: #34D399;
     transition: background-color 0.5s ease;
-}
-
-:root{
-    --verde-principal: #059669;
-    --verde-secundario: #34D399;
-    --negro: #111827;
-    --verde-claro: #D1FAE5;
 }
 
 body{
