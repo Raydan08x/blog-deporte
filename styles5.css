@@ -10,6 +10,11 @@ ul.navbar {
 
     position: relative;
     min-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 ul.navbar li.logo {
@@ -47,6 +52,7 @@ body{
     font-family: 'Inter', sans-serif;
     background-color: var(--verde-claro);
     color: var(--negro);
+    padding-top: 100px;
 }
 
 h1{

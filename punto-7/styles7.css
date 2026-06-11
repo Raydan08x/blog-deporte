@@ -19,8 +19,9 @@ ul.navbar {
     justify-content: center;
     align-items: center;
 
-    position: relative;
+    position: fixed;
     min-height: 100px;
+    
 }
 
 ul.navbar li.logo {
