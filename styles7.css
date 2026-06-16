@@ -6,53 +6,26 @@
   --negro: #111827;
   --verde-claro: #D1FAE5;
 }
+.navbar-custom {
+            background-color: #059669;
+            min-height: 100px;
+        }
 
-ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #059669;
+        .navbar-custom .nav-link {
+            color: white;
+            transition: background-color 0.5s ease;
+            padding: 14px 16px;
+        }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: fixed;
-    min-height: 100px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-ul.navbar li.logo {
-    position: absolute;
-    left: 20px;
-}
-
-ul.navbar li.logo img {
-    height: 80px;
-    width: auto;
-}
-
-ul.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "bebas neue", sans-serif;
-}
-
-ul.navbar li a:hover {
-    background-color: #34D399;
-    transition: background-color 0.5s ease;
-}
+        .navbar-custom .nav-link:hover {
+            background-color: #34D399;
+            color: white;
+        }
 
 footer {
   background: #059669;
   color: #D1FAE5;
-  padding:2rem;
+  padding: 2rem;
   margin-top: 2rem;
 }
 
@@ -116,127 +89,97 @@ footer {
   text-align: center;
 }
 
-.footer-bottom {
-  border-top: 0.5px solid #D1FAE5;
-  padding-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  text-align: center;
-}
-
-.footer-bottom p {
-  font-size: 12px;
-  color: #D1FAE5;
-  opacity: 0.7;
-  text-align: center;
-  width: 100%;
-}
-
-
-/* Footer menos alto y más compacto */
-footer {
-  margin-top: 1rem;
-  padding: 1.2rem 2rem;
-}
-
-.footer-grid {
-  gap: 1rem;
-  margin-bottom: 0.75rem;
-}
-
-
 
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color:#D1FAE5;
-    color:#111827;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    padding-top: 100px;
+  font-family: 'Inter', sans-serif;
+  background-color: #D1FAE5;
+  color: #111827;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  padding-top: 100px;
 
 }
 
 main {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-    font-family: 'Inter', sans-serif;
-    
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: 'Inter', sans-serif;
+
 }
 
 main section {
-    background-color: #ffffff;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    border-left: 5px solid #059669;
-    box-shadow: 0 4px 12px #111827;
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  border-left: 5px solid #059669;
+  box-shadow: 0 4px 12px #111827;
 }
 
 .titulo-contactanos {
-    font-size: 4rem;
-    font-weight: 600;
-    color: #059669;
-    margin-bottom: 10px;
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 3px;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #059669;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 3px;
 
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 form label {
-    font-weight: 500;
-    color: #111827;
+  font-weight: 500;
+  color: #111827;
 }
 
-input, textarea {
-    padding: 10px;
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
-    font-size: 14px;
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
-input:focus, textarea:focus {
-    outline: none;
-    border-color: #059669;
-    box-shadow: 0 0 0 2px #05966933; 
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #059669;
+  box-shadow: 0 0 0 2px #05966933;
 }
 
 textarea {
-    resize: vertical;
-    min-height: 100px;
-    font-family: 'Inter', sans-serif;
+  resize: vertical;
+  min-height: 100px;
+  font-family: 'Inter', sans-serif;
 }
 
 .checkbox-newsletter {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
 }
 
-button {
-    background-color: #059669;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    font-family: 'Inter', sans-serif;
+.btn {
+  background-color: #059669;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: 'Inter', sans-serif;
 }
 
-button:hover {
-    background-color: #34D399;
+.btn:hover {
+  background-color: #34D399;
 }

@@ -1,65 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fútbol Colombiano</title>
-    <link rel="stylesheet" href="styles7.css">
 
+    <link rel="stylesheet" href="styles7.css">
 </head>
 
 <body>
+
     <header>
-        
-        <nav>
+        <nav class="fixed-top">
+        <ul
+            class="navbar-custom list-unstyled d-flex justify-content-center align-items-center position-relative m-0 p-0">
 
-            <ul class="navbar">
-                <li class="logo"><img src="logo.png" width="50" height="50" alt="Logo"></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index6.html">Quiénes Somos</a></li>
-                <li><a href="index7.html">Contactanos</a></li>
-            </ul>
-        </nav>
+            <li class="position-absolute start-0 ms-3">
+                <a href="index.html">
+                    <img src="logo.png" width="120" alt="Logo">
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html" class="nav-link">Inicio</a>
+            </li>
+
+            <li>
+                <a href="index6.html" class="nav-link">Quiénes Somos</a>
+            </li>
+
+            <li>
+                <a href="index7.html" class="nav-link">Contactanos</a>
+            </li>
+
+        </ul>
+
+    </nav>
     </header>
-    <main>
-        <h2 class="titulo-contactanos"> Contactanos</h2>
-        <section>
-            <h3>Datos de contacto</h3>
-            <p>Correo electrónico: info@futbolcolombiano.com</p>
-            <p>Teléfono: +57 1 234 5678</p>
-            <p>Dirección: Calle 123 #45-67, Bogotá, Colombia</p>
+
+    <main class="container">
+
+        <h2 class="titulo-contactanos text-center mb-4">Contáctanos</h2>
+
+        <section class="row g-4 mb-4">
+
+            <div class="col-md-6">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Datos de contacto</h3>
+                        <p class="card-text">Correo electrónico: info@futbolcolombiano.com</p>
+                        <p class="card-text">Teléfono: +57 1 234 5678</p>
+                        <p class="card-text">Dirección: Calle 123 #45-67, Bogotá, Colombia</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Cómo llegar a nosotros</h3>
+                        <p class="card-text">
+                            Desde Bogotá, tome la autopista del norte y salga en la salida 45 hacia el sur.
+                            Continúe por la carretera durante 20 minutos y busque el cartel de
+                            "Fútbol Colombiano".
+                        </p>
+                    </div>
+                </article>
+            </div>
+
         </section>
-        <section>
-            <h3>Como llegar a nosotros</h3>
-            <p>Desde Bogotá, tome la autopista del norte y salga en la salida 45 hacia el sur. Continue por la carretera
-                durante 20 minutos y busque el cartel de "Futbol Colombiano".</p>
-        </section>
 
-        <section>
-            <form>
-                <h3>Formulario de contacto</h3>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" placeholder="Escribe tu nombre">
+        <section class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
 
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" placeholder="Escribe tu correo electrónico">
+                <form class="card p-4 shadow-sm" id="formContacto">
+                    <h3 class="text-center mb-4">Formulario de contacto</h3>
 
-                <label for="message">Mensaje:</label>
-                <textarea id="message" placeholder="Escribe tu mensaje"></textarea>
-                <div class="checkbox-newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Deseo suscribirme a nuestro newsletter</label>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" id="name" class="form-control" placeholder="Escribe tu nombre">
+                    </div>
 
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico:</label>
+                        <input type="email" id="email" class="form-control" placeholder="Escribe tu correo electrónico">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje:</label>
+                        <textarea id="message" class="form-control" rows="4"
+                            placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+
+                    <div class="checkbox-newsletter form-check mb-3">
+                        <input type="checkbox" id="newsletter" name="newsletter" class="form-check-input">
+                        <label for="newsletter" class="form-check-label">
+                            Deseo suscribirme a nuestro newsletter
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Enviar</button>
+
+                    <p id="mensajeFormulario" class="text-center mt-3"></p>
+                </form>
+
+            </div>
         </section>
 
     </main>
-
-    <script src="script.js"></script>
-</body>
     <footer>
         <div class="footer-grid">
 
@@ -97,7 +149,26 @@
         </div>
 
         <div class="footer-bottom">
-            <p>© 2024 Fútbol Colombiano — Todos los derechos reservados.</p>
+            <p>© 2026 Fútbol Colombiano — Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</body>
+
 </html>
