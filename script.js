@@ -12,6 +12,6 @@ formulario.addEventListener('submit',function(event){
  
     localStorage.setItem('formContacto', JSON.stringify(usuario));
  
-    console.log("Datos guardados en localStorage", formulario);
+    console.log("Datos guardados en localStorage", usuario);
     alert("Usuario guardado correctamente");
 });
